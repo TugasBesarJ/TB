@@ -21,12 +21,22 @@ public class Main {
       ruang = new Utama[banyak];
       for(int i=0;i<ruang.length;i++){
           ruang[i] = new Utama();
+          ruang[i].inputawal();
           ruang[i].input();
           ruang[i].luas();
           ruang[i].luasrasio();
           ruang[i].tampil();
+          ruang[i].analisisluasruang();
+          ruang[i].analisisbentukruang();
+          ruang[i].analisisrasioruang();
+          ruang[i].sarana();
+          ruang[i].kondisi();
+          ruang[i].kebersihan();
+          ruang[i].kondisikelas();
+          ruang[i].kenyamanan();
+          ruang[i].keamanan();
           
     }
-      
+     
 }
 }
