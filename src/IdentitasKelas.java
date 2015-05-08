@@ -9,6 +9,7 @@
  * @author samsung
  */
 import java.util.Scanner;
+
 public class IdentitasKelas {
     private String namaRuang;
     private int lokasiRuang;
@@ -37,15 +38,6 @@ public class IdentitasKelas {
     public void setProdi(String prodi) {
         this.prodi = prodi;
     }
-    
-    void inputawal(){
-        Scanner in=new Scanner(System.in);
-        System.out.println("Masukkan nama ruang anda : ");
-        setNamaRuang(in.nextLine());
-        System.out.println("Masukkan lokasi ruangan anda : ");
-        setLokasiRuang(in.nextInt());
-        System.out.println("Pilih program jurusan anda : ");
-        setProdi(in.nextLine());
-    }
+   
     
 }
