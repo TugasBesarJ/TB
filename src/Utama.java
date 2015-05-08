@@ -63,9 +63,16 @@ public class Utama extends IdentitasKelas {
     
     
     
+    void inputawal(){
+        Scanner in=new Scanner(System.in);
+        System.out.println("Masukkan nama ruang anda : ");
+        super.setNamaRuang(in.nextLine());
+        System.out.println("Masukkan lokasi ruangan anda : ");
+        super.setLokasiRuang(in.nextInt());
+        System.out.println("Pilih program jurusan anda : ");
+        setProdi(in.next());
+    }
     void input(){
-        IdentitasKelas obj=new IdentitasKelas();
-        obj.inputawal();
         Scanner in = new Scanner (System.in);
         System.out.println("Panjang : ");
         setPanjang(in.nextInt());
@@ -131,4 +138,66 @@ public class Utama extends IdentitasKelas {
         return true;
     }
     
+    void sarana(){
+    SaranaUtama qaz  = new SaranaUtama();
+    qaz.masuk();
+    qaz.Steker();
+    qaz.PosisiSteker();
+    qaz.KabelLCD();
+    qaz.PosisiKabelLCD();
+    qaz.Lampu();
+    qaz.kondisiLampu();
+    qaz.posisiLampu();
+    qaz.KipasAngin();
+    qaz.posisiKipasAngin();
+    qaz.AC();
+    qaz.posisiAC();
+    qaz.SSID();
+    qaz.CCTV();
+    qaz.PosisiCCTV();
+    
+}
+    void kondisi(){
+        kondisiKelas exe = new kondisiKelas();
+        exe.inputawal4();
+        exe.analisiskebersihan1();
+        exe.analisiskebersihan2();
+        exe.analisiskebersiahan3();
+        exe.analisiskebersihan4();
+        exe.analisiskebersiahan5();
+                
+    }
+    void kebersihan(){
+        kebersihanRuang qwe=new kebersihanRuang();
+        qwe.inputawal2();
+        qwe.analisissirkulasiudara();
+        qwe.analisispencahayaan();
+        qwe.analisiskelembapan();
+        qwe.analisissuhu();
+    }
+    void kondisikelas(){
+        kondisiKelas qaz=new kondisiKelas();
+        qaz.inputawal4();
+        qaz.analisiskebersihan1();
+        qaz.analisiskebersihan2();
+        qaz.analisiskebersiahan3();
+        qaz.analisiskebersihan4();
+        qaz.analisiskebersiahan5();
+    }
+    void kenyamanan(){
+        kenyamananRuang qaz=new kenyamananRuang();
+        qaz.inputawal3();
+        qaz.analisiskebisingan();
+        qaz.analisisbau();
+        qaz.analisiskebocoran();
+        qaz.analisiskerusakan();
+        
+    }
+    void keamanan(){
+        keamananRuang qaz=new keamananRuang();
+        qaz.inputawal2();
+        qaz.analisiskekokohan();
+        qaz.analisiskuncipintudanjendela();
+        qaz.analisiskeamananruang();
+    }
 }
