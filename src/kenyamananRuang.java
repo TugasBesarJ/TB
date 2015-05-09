@@ -66,42 +66,90 @@ public class kenyamananRuang {
     
       boolean analisiskebisingan(){
         if(getKebisingan()!= bising){
-            System.out.println("kondisi ruang sesuai.");
+            System.out.println(outanalisiskebisingan ());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai");
+            System.out.println(out1analisiskebisingan ());
+            return false;
         }
-        return true;
         }
+      public static boolean outanalisiskebisingan (){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskebisingan (){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
       
+       
+       
+       
       boolean analisisbau(){
         if(getBau()!= bau){
-            System.out.println("kondisi ruang sesuai.");
+            System.out.println(outanalisisbau());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai");
+            System.out.println(out1analisisbau());
+            return false;
         }
-        return true;
         }
+      
+      public static boolean outanalisisbau(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisisbau(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
+       
+       
+       
+       
       
       boolean analisiskebocoran(){
         if(getKebocoran()!= bocor){
-            System.out.println("kondisi ruang sesuai.");
+            System.out.println(outanalisiskebocoran());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai.");
+            System.out.println(out1analisiskebocoran());
+            return false;
         }
-        return true;
       }
+       
+      public static boolean outanalisiskebocoran(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskebocoran(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
         
+       
+       
+       
       boolean analisiskerusakan(){
         if(getKerusakan()!= rusak){
             System.out.println("kondisi ruang sesuai.");
+            return true;
         }
         else{
             System.out.println("kondisi ruang tidak sesuai.");
+            return false;
         }
-        
-        return true;
     }
+      
+      public static boolean outanalisiskerusakan(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskerusakan(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
 }
