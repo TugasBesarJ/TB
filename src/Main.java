@@ -14,21 +14,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
          int banyak;
-      Utama ruang[];
+      Call ruang[];
       Scanner in = new Scanner (System.in);
       System.out.println("Masukkan jumlah ruang : ");
       banyak = in.nextInt();
-      ruang = new Utama[banyak];
+      ruang = new Call[banyak];
       for(int i=0;i<ruang.length;i++){
-          ruang[i] = new Utama();
-          ruang[i].inputawal();
-          ruang[i].input();
-          ruang[i].luas();
-          ruang[i].luasrasio();
-          ruang[i].tampil();
-          ruang[i].analisisluasruang();
-          ruang[i].analisisbentukruang();
-          ruang[i].analisisrasioruang();
+          ruang[1].utama();
           ruang[i].sarana();
           ruang[i].kondisi();
           ruang[i].kebersihan();
