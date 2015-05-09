@@ -105,27 +105,27 @@ public class Utama extends IdentitasKelas {
         System.out.println("Lebar yang anda inputkan : "+ getLebar());
     }
     
-    boolean analisisluasruang(){
-        if(getPanjang()!= getLebar()){
-            System.out.println("Bentuk ruangan persegi panjang dan sesuai.");
-        }
-        else{
-            System.out.println("Bentuk kelas persegi dan tidak sesuai.");
-        }
-        return true;
-    }
-    
     boolean analisisbentukruang(){
-        if(luasrasio > 0.5){
-            System.out.println("Luas rasio kelas anda sesuai.");
+        if(getPanjang()!= getLebar()){
+            System.out.println("luas ruang sesuai");
         }
         else{
-            System.out.println("Luas rasio kelas anda tidak sesuai");
+            System.out.println("luas ruang tidak sesuai");
         }
         return true;
     }
     
     boolean analisisrasioruang(){
+        if(luasrasio > 0.5){
+            System.out.println("Luas rasio kelas anda sesuai.");
+        }
+        else{
+            System.out.println("Bentuk kelas persegi dan tidak sesuai");
+        }
+        return true;
+    }
+    
+    boolean analispintudanjendela(){
         if(getJumlahPintu() >=2 && getJumlahJendela() >= 2){
             System.out.println("Jumlah pintu dan jendela sesuai.");
         }
@@ -138,66 +138,4 @@ public class Utama extends IdentitasKelas {
         return true;
     }
     
-    void sarana(){
-    SaranaUtama qaz  = new SaranaUtama();
-    qaz.masuk();
-    qaz.Steker();
-    qaz.PosisiSteker();
-    qaz.KabelLCD();
-    qaz.PosisiKabelLCD();
-    qaz.Lampu();
-    qaz.kondisiLampu();
-    qaz.posisiLampu();
-    qaz.KipasAngin();
-    qaz.posisiKipasAngin();
-    qaz.AC();
-    qaz.posisiAC();
-    qaz.SSID();
-    qaz.CCTV();
-    qaz.PosisiCCTV();
-    
-}
-    void kondisi(){
-        kondisiKelas exe = new kondisiKelas();
-        exe.inputawal4();
-        exe.analisiskebersihan1();
-        exe.analisiskebersihan2();
-        exe.analisiskebersiahan3();
-        exe.analisiskebersihan4();
-        exe.analisiskebersiahan5();
-                
-    }
-    void kebersihan(){
-        kebersihanRuang qwe=new kebersihanRuang();
-        qwe.inputawal2();
-        qwe.analisissirkulasiudara();
-        qwe.analisispencahayaan();
-        qwe.analisiskelembapan();
-        qwe.analisissuhu();
-    }
-    void kondisikelas(){
-        kondisiKelas qaz=new kondisiKelas();
-        qaz.inputawal4();
-        qaz.analisiskebersihan1();
-        qaz.analisiskebersihan2();
-        qaz.analisiskebersiahan3();
-        qaz.analisiskebersihan4();
-        qaz.analisiskebersiahan5();
-    }
-    void kenyamanan(){
-        kenyamananRuang qaz=new kenyamananRuang();
-        qaz.inputawal3();
-        qaz.analisiskebisingan();
-        qaz.analisisbau();
-        qaz.analisiskebocoran();
-        qaz.analisiskerusakan();
-        
-    }
-    void keamanan(){
-        keamananRuang qaz=new keamananRuang();
-        qaz.inputawal2();
-        qaz.analisiskekokohan();
-        qaz.analisiskuncipintudanjendela();
-        qaz.analisiskeamananruang();
-    }
 }
