@@ -7,10 +7,7 @@ import java.util.Scanner;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author samsung
- */
+
 public class Utama extends IdentitasKelas {
     double luas;
     double luasrasio;
@@ -107,35 +104,72 @@ public class Utama extends IdentitasKelas {
     
     boolean analisisbentukruang(){
         if(getPanjang()!= getLebar()){
-            System.out.println("luas ruang sesuai");
+            System.out.println(outanalisisbentukruang());
+            return true;  
         }
         else{
-            System.out.println("luas ruang tidak sesuai");
+            System.out.println(out1analisisbentukruang());
+           return false;
         }
+    }
+    public static boolean outanalisisbentukruang(){
+        System.out.println("luas ruang sesuai"); 
         return true;
     }
+    public static boolean out1analisisbentukruang(){
+        System.out.println("luas ruang tidak sesuai");
+        return false;
+    }
+    
+    
+    
     
     boolean analisisrasioruang(){
         if(luasrasio > 0.5){
-            System.out.println("Luas rasio kelas anda sesuai.");
+            System.out.println(outanalisisrasioruang());
+           return true;
         }
         else{
-            System.out.println("Bentuk kelas persegi dan tidak sesuai");
-        }
-        return true;
+            System.out.println(out1analisisrasioruang());
+             return false;   
+        }  
     }
+    public static boolean outanalisisrasioruang(){
+      System.out.println("Luas rasio kelas sesuai."); 
+      return true;
+    }
+    public static boolean out1analisisrasioruang(){
+       System.out.println("luas rasio kelas tidak sesuai");
+        return false; 
+    }
+    
+    
     
     boolean analispintudanjendela(){
         if(getJumlahPintu() >=2 && getJumlahJendela() >= 2){
-            System.out.println("Jumlah pintu dan jendela sesuai.");
+            System.out.println(outanalispintudanjendela());
+            return true;
         }
         else if(getJumlahPintu() >=2 && getJumlahJendela() <= 2){
-            System.out.println("Jumlah jendela sesuai, namun jendela tidak sesuai");
+            System.out.println(out1analispintudanjendela());
+            return Boolean.FALSE;
         }
         else{
-            System.out.println("Jumlah jendela dan pintu tidak sesuai.");
+            System.out.println(out2analispintudanjendela());
+            return false;
         }
-        return true;
     }
     
+    public static boolean outanalispintudanjendela(){
+      System.out.println("Jumlah pintu dan jendela sesuai."); 
+      return true;
+    }
+    public static boolean out1analispintudanjendela(){
+       System.out.println("Jumlah jendela sesuai, namun jendela tidak sesuai");
+        return false; 
+    }
+      public static boolean out2analispintudanjendela(){
+       System.out.println("Jumlah jendela dan pintu tidak sesuai.");
+        return false; 
+    }
 }
