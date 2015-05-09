@@ -65,42 +65,86 @@ public class kebersihanRuang {
     
     boolean analisissirkulasiudara(){
         if(getSirkulasiUdara()== lancar){
-            System.out.println("kelancaran sirkulasi udara sesuai.");
+            System.out.println(outanalisissirkulasiudara());
+            return true;
         }
         else{
-            System.out.println("kelancaran sirkulasi udara tidak sesuai.");
+            System.out.println(out1analisissirkulasiudara());
+            return false;
         }
-        return true;
     }
+    public static boolean outanalisissirkulasiudara(){
+       System.out.println("kelancaran sirkulasi udara sesuai.");
+       return true;
+    }
+    public static boolean out1analisissirkulasiudara(){
+     System.out.println("kelancaran sirkulasi udara tidak sesuai.");
+        return false;
+    }
+    
+    
     
     boolean analisispencahayaan(){
         if(getPencahayan()>=250 &&getPencahayan()<=350){
-            System.out.println("nilai pencahayaan sesuai.");
+            System.out.println(outanalisispencahayaan());
+            return true;
         }
         else{
-            System.out.println("nilai pencahayaan tidak sesuai");
+            System.out.println(out1analisispencahayaan());
+            return false;
         }
-        return true;
     }
+    public static boolean outanalisispencahayaan(){
+       System.out.println("nilai pencahayaan sesuai.");
+       return true;
+    }
+    public static boolean out1analisispencahayaan(){
+     System.out.println("nilai pencahayaan tidak sesuai");
+        return false;
+    }
+    
+    
+    
     
     boolean analisiskelembapan(){
         if(getKelembapan()>=70 &&getKelembapan()<=80){
             
-            System.out.println("nilai kelembapan sesuai.");
+            System.out.println(outanalisiskelembapan());
+            return true;
         }
         else{
-            System.out.println("nilai kelembapan tidak sesuai.");
+            System.out.println(out1analisiskelembapan());
+            return false;
         }
-        return true;
     }
+    public static boolean outanalisiskelembapan(){
+       System.out.println("nilai kelembapan sesuai.");
+       return true;
+    }
+    public static boolean out1analisiskelembapan(){
+     System.out.println("nilai kelembapan tidak sesuai.");
+        return false;
+    }
+    
+    
+    
     
     boolean analisissuhu(){
         if(getSuhu()>=25 && getSuhu() <= 35){
-            System.out.println("nilai suhu sesuai");
+            System.out.println(outanalisissuhu());
+            return true;
         }
         else{
-            System.out.println("nilai suhu tidak sesuai.");
+            System.out.println(out1analisissuhu());
+            return false;
         }
-        return true;
+    }
+    public static boolean outanalisissuhu(){
+       System.out.println("nilai suhu sesuai");
+       return true;
+    }
+    public static boolean out1analisissuhu(){
+     System.out.println("nilai suhu tidak sesuai.");
+        return false;
     }
 }
