@@ -20,7 +20,7 @@ public class Main {
       banyak = in.nextInt();
       ruang = new Call[banyak];
       for(int i=0;i<ruang.length;i++){
-          ruang[1].utama();
+          ruang[i].utama();
           ruang[i].sarana();
           ruang[i].kondisi();
           ruang[i].kebersihan();
