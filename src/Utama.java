@@ -63,7 +63,7 @@ public class Utama extends IdentitasKelas {
     void inputawal(){
         Scanner in=new Scanner(System.in);
         System.out.println("Masukkan nama ruang anda : ");
-        super.setNamaRuang(in.nextLine());
+        super.setNamaRuang(in.next());
         System.out.println("Masukkan lokasi ruangan anda : ");
         super.setLokasiRuang(in.nextInt());
         System.out.println("Pilih program jurusan anda : ");
