@@ -53,33 +53,69 @@ public class keamananRuang {
     }
     
       boolean analisiskekokohan(){
-        if(getKekokohan()!= kokoh){
-            System.out.println("kondisi ruang sesuai.");
+        if(getKekokohan()== kokoh){
+            System.out.println(outanalisiskekokohan());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai");
+            System.out.println(out1analisiskekokohan());
+            return false;
         }
-        return true;
+        
       }
+      
+      public static boolean outanalisiskekokohan(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskekokohan(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
+       
+       
       
       boolean analisiskuncipintudanjendela(){
         if(getKunciPintuJendela()== ada){
-            System.out.println("kondisi ruang sesuai.");
+            System.out.println(outanalisiskuncipintudanjendela());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai");
+            System.out.println(out1analisiskuncipintudanjendela());
+            return true;
         }
-        return true;
       }
+      public static boolean outanalisiskuncipintudanjendela(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskuncipintudanjendela(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
+       
+       
+       
       
       boolean analisiskeamananruang(){
         if(getBahaya()== aman){
-            System.out.println("kondisi ruang sesuai.");
+            System.out.println(outanalisiskeamananruang());
+            return true;
         }
         else{
-            System.out.println("kondisi ruang tidak sesuai.");
+            System.out.println(outanalisiskeamananruang());
+            return false;
               
         }
-        return true;
+        
       }
+      
+      public static boolean outanalisiskeamananruang(){
+          System.out.println("kondisi ruang sesuai.");
+          return true;  
+      }
+       public static boolean out1analisiskeamananruang(){
+          System.out.println("kondisi ruang tidak sesuai"); 
+        return false;
+       }
 }
