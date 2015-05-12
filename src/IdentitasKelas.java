@@ -11,15 +11,16 @@
 import java.util.Scanner;
 
 public class IdentitasKelas {
-    private String namaRuang;
-    private int lokasiRuang;
-    private String prodi;
-
+    
+    String namaRuang;
+    String lokasiRuang;
+    String prodi;
+    
+    
     public String getNamaRuang() {
         return namaRuang;
     }
-
-    public int getLokasiRuang() {
+    public String getLokasiRuang() {
         return lokasiRuang;
     }
 
@@ -31,13 +32,14 @@ public class IdentitasKelas {
         this.namaRuang = namaRuang;
     }
 
-    public void setLokasiRuang(int lokasiRuang) {
+    public void setLokasiRuang(String lokasiRuang) {
         this.lokasiRuang = lokasiRuang;
     }
 
     public void setProdi(String prodi) {
         this.prodi = prodi;
     }
-   
-    
+    void inputawal(){
+        
+    }
 }
