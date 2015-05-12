@@ -8,7 +8,8 @@ import java.util.Scanner;
  */
 
 
-public class Utama extends IdentitasKelas {
+public class Utama extends IdentitasKelas{
+
     double luas;
     double luasrasio;
     private int panjang;
@@ -16,7 +17,28 @@ public class Utama extends IdentitasKelas {
     private int jumlahKursi;
     private int jumlahJendela;
     private int jumlahPintu;
+   
+    
+    public Utama (String namaRuang , String lokasiRuang){
+        this.namaRuang=namaRuang;
+        this.lokasiRuang=lokasiRuang;
+    }
+    public Utama(){
+        
+    }
 
+    
+    void setData(String namaRuang , String lokasiRuang){
+        this.namaRuang=namaRuang;
+        this.lokasiRuang=lokasiRuang;
+    }
+    
+    void setData(String namaRuang , String lokasiRuang, String prodi){
+        this.namaRuang=namaRuang;
+        this.lokasiRuang=lokasiRuang;
+        this.prodi=prodi;
+    }
+    
     public void setPanjang(int panjang) {
         this.panjang = panjang;
     }
@@ -58,17 +80,18 @@ public class Utama extends IdentitasKelas {
     }
     
     
-    
-    
+    @Override
     void inputawal(){
         Scanner in=new Scanner(System.in);
         System.out.println("Masukkan nama ruang anda : ");
-        super.setNamaRuang(in.next());
+        super.setNamaRuang(in.nextLine());
         System.out.println("Masukkan lokasi ruangan anda : ");
-        super.setLokasiRuang(in.nextInt());
+        super.setLokasiRuang(in.nextLine());
         System.out.println("Pilih program jurusan anda : ");
-        setProdi(in.next());
+        super.setProdi(in.nextLine());
     }
+   
+    
     void input(){
         Scanner in = new Scanner (System.in);
         System.out.println("Panjang : ");
@@ -92,7 +115,10 @@ public class Utama extends IdentitasKelas {
         return luas()/jumlahKursi;
     }
     
-    void tampil(){
+    void input(String panjang){
+        
+    }
+    void inputawal(String ruang){
         System.out.println("Nama ruang anda : "+getNamaRuang());
         System.out.println("Lokasi ruangan anda ada di : "+getLokasiRuang());
         System.out.println("Jurusan/ program studi pilihan anda adalah : "+getProdi());
