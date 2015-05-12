@@ -224,31 +224,65 @@ public class SaranaUtama {
     }
      boolean Steker(){
         if(getSteker()>= 4){
-            System.out.println("jumlah sesuai");
+            System.out.println(outSteker());
+              return true;
         }
         else{
-            System.out.println("jumlah tidak sesuai");
+            System.out.println(out1Steker());
+              return false;
         }
-        return true;
       }
+      public static boolean outSteker(){
+          System.out.println("jumlah sesuai");
+          return true;  
+      }
+       public static boolean out1Steker(){
+          System.out.println("jumlah tidak sesuai"); 
+        return false;
+       }
+       
+       
       boolean PosisiSteker(){
         if(getPosisiSteker() == DipojokDanDekatDosen ){
-            System.out.println("posisi sesuai.");
+            System.out.println(outPosisiSteker());
+             return true;
         }
         else{
-            System.out.println("posisi tidak sesuai");
-        }
-        return true;
+            System.out.println(out1PosisiSteker());
+             return false;
       }
+      }
+      public static boolean outPosisiSteker(){
+          System.out.println("posisi sesuai");
+          return true;  
+      }
+       public static boolean out1PosisiSteker(){
+          System.out.println("posisi tidak sesuai"); 
+        return false;
+       }
+       
+       
       boolean KabelLCD(){
           if(getKabelLCD()>=1){
-             System.out.println("Jumlah Sesuai");
+             System.out.println(outKabelLCD());
           }
           else{
-              System.out.println("Jumlah tidak sesuai");
+              System.out.println(out1KabelLCD());
           }
           return true;
       }
+      
+      public static boolean outKabelLCD(){
+          System.out.println("jumlah sesuai");
+          return true;  
+      }
+       public static boolean out1KabelLCD(){
+          System.out.println("jumlah tidak sesuai"); 
+        return false;
+       }
+       
+       
+       
       boolean PosisiKabelLCD(){
           if(getPosisiKabelLCD().equals(BerfungsiDanDekatDosen)){
               System.out.println("Berfungsi");
